@@ -23,10 +23,15 @@ namespace SnakeGame
             Console.ForegroundColor = ConsoleColor.White;
             T.DibujarTableroMenu();
             string title = "Puntajes:";
-            int startPosition = 10;
+            int startPosition = 8;
             T.Move(startPosition, (T.Width / 2) - (title.Length / 2));
             Console.ForegroundColor = ConsoleColor.Green;
             T.Print(title);
+            startPosition++;
+            string msg = "Presione Escape para volver al menú principal";
+            T.Move(startPosition, (T.Width / 2) - (msg.Length / 2));
+            Console.ForegroundColor = ConsoleColor.White;
+            T.Print(msg);
             startPosition++;
             string titulos = "Jugador  -  Puntaje  -  Fecha";
             startPosition++;
