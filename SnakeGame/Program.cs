@@ -6,7 +6,6 @@ namespace SnakeGame
     {
         public static bool GameOver { get; set; }
         public static int Points { get; set; }
-        static Snake S = new Snake();
         static Tablero T = new Tablero();
         public enum Status { StartMenu, Game, GameOver, Pause};
         public static Status currentStatus;
@@ -62,6 +61,7 @@ namespace SnakeGame
         /// </summary>
         public static void StartGame()
         {
+            Snake S = new Snake();
             S.Move();
             S.GenerateFood();
             while (GameOver == false)

@@ -10,7 +10,7 @@ namespace SnakeGame
 
         public Score()
         {
-            this.FilePath = "./Scores.txt";
+            this.FilePath = @"./Scores.txt";
         }
 
         /// <summary>
@@ -23,7 +23,7 @@ namespace SnakeGame
             Console.ForegroundColor = ConsoleColor.White;
             T.DibujarTableroMenu();
             string title = "Puntajes:";
-            int startPosition = 8;
+            int startPosition = 10;
             T.Move(startPosition, (T.Width / 2) - (title.Length / 2));
             Console.ForegroundColor = ConsoleColor.Green;
             T.Print(title);
